@@ -128,7 +128,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
     4. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 50** dan durasi waktu load testing 60 detik? (tingkat failure harus %)
     5. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 10**0 dan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
 4. Buatlah dokumentasi laporan dalam github (markdown) dengan konten sebagai berikut: (20%)
-    1. Introduction, jelaskan permasalahan (bisa merefer ke soal ini)
+    1. Introduction, jelaskan permasalahan (bisa mereferensi ke soal ini)
     2. Gambar desain rancangan arsitektur komputasi awan (dapat menggunakan https://app.diagrams.net/) dan Tabel harga spesifikasi dan Harga VM
     3. Tuliskan langkah langkah implementasi dan konfigurasi teknologinya (Load balancing, instalasi app.py, instalasi mongodb, dll) disertai screenshot lebih bagus 
     4. Hasil Pengujian endpoint setiap API (dapat menggunakan Postman)
