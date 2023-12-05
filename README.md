@@ -8,24 +8,24 @@
 ## B. Constraint Final Project
 1. FP ini dikerjakan secara berkelompok (1 kelompok terdiri dari 4-5 orang)
 2. Linkungan cloud yang digunakan (pilih salah satu)
-    >Digital Ocean (Credit 200$)
-    * Boleh memanfaatkan semua fitur yang ada
-    * Harga sesuai dengan yang disediakan Provider
-    > Microsoft Azure (Credit 100$)
-    * Boleh memanfaatkan semua fitur yang ada
-    * Harga sesuai dengan pricing calculator Azure
-    >Local Vritual Machine (VirtualBox/Vagrant) sebagai alternatif simulasi cloud.
-    * Apabila membuat lebih dari 1 VM, maka VM harus dibuat **minimal** dari 2 Komputer / Host yang berbeda
-    * Hanya boleh membuat VM dengan spesifikasi sebagai berikut
+    - `Digital Ocean (Credit 200$)`
+        * Boleh memanfaatkan semua fitur yang ada
+        * Harga sesuai dengan yang disediakan Provider
+    - `Microsoft Azure (Credit 100$)`
+        * Boleh memanfaatkan semua fitur yang ada
+        * Harga sesuai dengan pricing calculator Azure
+    - `Local Vritual Machine (VirtualBox/Vagrant) sebagai alternatif simulasi cloud.`
+        * Apabila membuat lebih dari 1 VM, maka VM harus dibuat **minimal** dari 2 Komputer / Host yang berbeda
+        * Hanya boleh membuat VM dengan spesifikasi sebagai berikut
 
-        | no | Tipe   | CPU   | Memory | Harga / bulan |
-        |----|--------|-------|--------|---------------|
-        | 1  | vm1    | 1vCPU | 512 MB | 4 US$         |
-        | 2  | vm2    | 1vCPU | 1 GB   | 6 US$         |
-        | 3  | vm3    | 1vCPU | 2 GB   | 12 US$        |
-        | 4  | vm4    | 2vCPU | 2 GB   | 18 US$        |
-        | 5  | vm5    | 2vCPU | 4 GB   | 24 US$        |
-        | 6  | vm6    | 4vCPU | 8 GB   | 48 US$        |
+            | No | Tipe   | CPU   | Memory | Harga / bulan |
+            |----|--------|-------|--------|---------------|
+            | 1  | vm1    | 1vCPU | 512 MB | 4 US$         |
+            | 2  | vm2    | 1vCPU | 1 GB   | 6 US$         |
+            | 3  | vm3    | 1vCPU | 2 GB   | 12 US$        |
+            | 4  | vm4    | 2vCPU | 2 GB   | 18 US$        |
+            | 5  | vm5    | 2vCPU | 4 GB   | 24 US$        |
+            | 6  | vm6    | 4vCPU | 8 GB   | 48 US$        |
 
 
 ## C. Permasalahan
