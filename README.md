@@ -1,4 +1,4 @@
-# :fire: FINAL PROJECT (FP) TEKNOLOGI KOMPUTASI AWAN :fire:
+# 🔥 FINAL PROJECT (FP) TEKNOLOGI KOMPUTASI AWAN 🔥
 
 ## A. Cakupan Capaian Pembelajaran Mata Kuliah (CPMK)
 1. Mampu memahami dan menerapkan berbagai servis pada layanan awan.
@@ -30,7 +30,7 @@
 
 ## C. Permasalahan
 
-Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah **Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.**(menurut kurikulum IT 2023) 
+Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah **Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.**(menurut kurikulum IT ITS 2023 😙) 
 
 Pada suatu saat teman anda ingin mengajak anda memulai bisnis di bidang digital marketing, anda diberikan sebuah aplikasi berbasis API File: [app.py](/app.py) dengan spesifikasi sebagai berikut
 
