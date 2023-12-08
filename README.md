@@ -6,7 +6,7 @@
 
 
 ## B. Constraint Final Project
-1. FP ini dikerjakan secara berkelompok (1 kelompok terdiri dari 4-5 orang)
+1. FP ini dikerjakan secara berkelompok (mengikuti kelompok presentasi)
 2. Linkungan cloud yang digunakan (pilih salah satu)
     - `Digital Ocean (Credit 200$)`
         * Boleh memanfaatkan semua fitur yang ada
