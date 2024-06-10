@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sentiment Analysis</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <form id="sentiment-form">
+                        <div class="form-group">
+                            <textarea id="text-input" class="form-control" rows="4" placeholder="Enter text here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-sucess btn-block">Analyze</button>
+                    </form>
+                    <p id="result" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="history-container">
+                    <h2 class="text-center">History</h2>
+                    <ul id="history" class="list-group mt-3"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('sentiment-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const text = document.getElementById('text-input').value;
+            try {
+                const response = await fetch('http://139.59.228.185:5000/analyze', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text }),
+                });
+                if (!response.ok) throw new Error('Network response was not ok');
+                const result = await response.json();
+                const resultElement = document.getElementById('result');
+                resultElement.textContent = `Sentiment Score: ${result.sentiment}`;
+                resultElement.className = result.sentiment > 0 ? 'positive' : 'negative';
+                fetchHistory();
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        });
+
+        async function fetchHistory() {
+            try {
+                const response = await fetch('http://139.59.228.185:5000/history');
+                if (!response.ok) throw new Error('Network response was not ok');
+                const history = await response.json();
+                const historyList = document.getElementById('history');
+                historyList.innerHTML = '';
+                history.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.className = `list-group-item history-item ${item.sentiment > 0 ? 'positive' : 'negative'}`;
+                    listItem.textContent = `Text: ${item.text}, Sentiment: ${item.sentiment}`;
+                    historyList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        // Fetch history on page load
+        fetchHistory();
+    </script>
+</body>
+</html>
