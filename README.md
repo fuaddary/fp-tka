@@ -154,11 +154,11 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
         ![alt text](result/LB_result.png)
 
         dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 73 RPS, maka nilainya 173 / 200 x 30 = 25.95 poin
-        
+
       - Mencari user peak concurrency dengan spawn rate 50 100 200 dan 500 (maks 5 poin)
 
-  - Terdapat Kesimpulan dan saran (10 poin)
-    kesimpulan dari FP yang dikerjakkan dengan analisis mendalam. (maks 5 poin)
+  - Terdapat Kesimpulan dan saran (10 poin) <br>
+    kesimpulan dari FP yang dikerjakkan dengan analisis mendalam. (maks 5 poin)<br>
     saran ketika di masa mendatang jika mendapat project serupa dalam dunia nyata (maks 5 poin)
 
 ## BONUS
