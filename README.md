@@ -82,7 +82,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 ## D. Output Final Project dan Penilaian
 1. Buatlah rancangan arsitektur cloud nya beserta harga yang diperlukan (20%) **(dipresentasikan saat diskusi minggu 15)**
 2. Lakukan instalasi / implementasi rancangan cloud dan aplikasi, pastikan setiap endpoint aplikasi dapat berjalan (20%)
-3. Lakukan load testing menggunakan Locust ([Locustfile](/Resources/Test/locustfile.py)) untuk endpoint Get Order dan Create new Order dengan parameter pengujian sebagai berikut (35%)
+3. Lakukan load testing menggunakan Locust ([Locustfile](/Resources/Test/locustfile.py)) untuk endpoint Get History dan Analyze dengan parameter pengujian sebagai berikut (35%)
     1. Locust harus dijalankan dengan Komputer / Host yang berbeda dari Aplikasi
     2. Berapakah **jumlah Request per seconds (RPS)** maksimum yang dapat ditangani oleh server dengan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
     3. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 50** dan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
@@ -100,4 +100,62 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 ## X. Tips and trick
 1. Implementasikan dengan spesifikasi paling kecil terlebih dahulu, coba cari kofigurasi optimal untuk memaksimalkan kerja processor dan memory, kemudian lakukan scale out untuk mendapatkan hasil Load testing terbaik.
 2. Manfaatkan semua yang sudah dipelajari dalam kelas dan praktikum komputasi awan (Load balancing, provisioning, dll)
-3. Good Luck :fist:
+3. Hapus isi database setiap kali akan melakukan pengujian menggunakan locust
+4. Gunakan kreativitas dalam eksperimen, berpikir out of the box
+
+
+## Z. Teknis Revisi dan Penilaian
+
+### Teknis Revisi
+1. Mengisi form di google drive link berikut [Revisi minggu 17](https://its.id/DemoCloud2024)
+2. Update Laporan dalam github markdown
+    - Update hasil revisi dalam laporan
+    - tambahkan link **Video untuk demo dalam laporan sebagai pengganti demo langsung.** konten video meliputi:
+      - Penjelasan singkat arsitektur yang dibuat
+      - Demo pengujian aplikasi sentiment analysis
+      - Demo dalam menjalankan locust dan menampilkan hasil output dari locust
+3. Waktu terakhir untuk revisi adalah 29 Juni 2024, apabila melebihi batas waktu yang ditentukan, maka akan diambil nilai terakhir sebelum revisi.
+4. Hasil nilai Final akan diumumkan pada hari Senin 1 Juli 2024 pada link [ini](https://its.id/DemoCloud2024)
+
+### Teknis Penilaian
+1. penilaian berdasarkan hasil laporan dari github markdown
+    - Terdapat rancangan arsitektur (20 poin) (dokumentasi laporan 5 poin)
+      - gambar arsitektur (maks 10 poin)
+      - rancangan harga (maks 10 poin)
+    - Terdapat implementasi arsitektur dan pengujian aplikasi (20 poin) + (dokomentasi laporan 5 poin)
+      - teknis implementasi jelas apa saja langkah langkah yang dilakukan (maks 10 poin) dan didokumentasikan dengan detail (maks 5 poin)
+      - setiap endpoint dapat diakses (maks 10 poin) dan didokumentasikan dengan detail (maks 5 poin)
+    - Terdapat hasil pengujian menggunakan Locust (35 poin) (dokomentasi laporan 5 poin)
+      - mencari maksimum nilai **RATA RATA RPS** yang didapat
+        nilai (maksimum 30 poin): Rata rata RPS / 200 x 25 
+
+        contoh :
+        berikut menggunakan single server droplet Digital Ocean (4$) dengan konfigurasi locust sebagai berikut
+        ![alt text](result/4_usd_locust.png)
+        resource utilization
+        ![alt text](result/4_usd_cpu.png)
+        output 
+        ![alt text](result/4_usd_result.png)
+        dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 73 RPS, maka nilainya 73 / 200 x 30 = 10.95 poin
+
+        contoh lain :
+        berikut menggunakan droplet 3 Digital Ocean (3x18$) dengan weighted load balancing
+        ![alt text](result/LB_locust.png)
+        resource utilization
+        ![alt text](result/LB_cpu.png)
+        output 
+        ![alt text](result/LB_result.png)
+        dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 73 RPS, maka nilainya 173 / 200 x 30 = 25.95 poin
+      - Mencari user peak concurrency dengan spawn rate 50 100 200 dan 500 (maks 5 poin)
+
+  - Terdapat Kesimpulan dan saran (10 poin)
+    kesimpulan dari FP yang dikerjakkan dengan analisis mendalam. (maks 5 poin)
+    saran ketika di masa mendatang jika mendapat project serupa dalam dunia nyata (maks 5 poin)
+
+## BONUS
+  Kelompok dengan nilai Final Project tertingi akan mendapatkan 🔥**Uang Cash senilai RP 100.000,00**🔥 (apabila terdapat lebih dari 1 tim dengan nilai tertinggi yang sama, akan diambil yang lebih dulu submit) 
+
+## Special Notes
+  Nilai dianggap sama untuk semua anggota tim, kecuali ada laporan dari anggota tim yang merasa ada anggota lainnya yang tidak ikut bekerja.
+
+  Segala betuk kecurangan akan berdampak pada pengurangan nilai, kerjakan dengan jujur.
