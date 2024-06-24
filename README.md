@@ -86,7 +86,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
     1. Locust harus dijalankan dengan Komputer / Host yang berbeda dari Aplikasi
     2. Berapakah **jumlah Request per seconds (RPS)** maksimum yang dapat ditangani oleh server dengan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
     3. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 50** dan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
-    4. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 100** dan durasi waktu load testing 60 detik? (tingkat failure harus %)
+    4. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 100** dan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
     5. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 200** dan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
     6. Berapa **jumlah peak concurrency** maksimum yang dapat ditangani oleh server dengan **spawn rate 500** dan durasi waktu load testing 60 detik? (tingkat failure harus 0%)
 4. Buatlah dokumentasi laporan dalam github (markdown) dengan konten sebagai berikut: (25%)
@@ -159,3 +159,5 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
   Nilai dianggap sama untuk semua anggota tim, kecuali ada laporan dari anggota tim yang merasa ada anggota lainnya yang tidak ikut bekerja.
 
   Segala betuk kecurangan akan berdampak pada pengurangan nilai, kerjakan dengan jujur.
+
+  **JANGAN LUPA DESTROY RESOURCES PROJECT KETIKA FP TELAH BERAKHIR.** 
