@@ -127,7 +127,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
       - setiap endpoint dapat diakses (maks 10 poin) dan didokumentasikan dengan detail (maks 5 poin)
     - Terdapat hasil pengujian menggunakan Locust (35 poin) (dokomentasi laporan 5 poin)
       - mencari maksimum nilai **RATA RATA RPS** yang didapat
-        nilai (maksimum 30 poin): Rata rata RPS / 200 x 25 
+        nilai (maksimum 30 poin): Rata rata RPS / 200 x 30 
 
         CONTOH : <br>
 
@@ -153,7 +153,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
         output 
         ![alt text](result/LB_result.png)
 
-        dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 73 RPS, maka nilainya 173 / 200 x 30 = 25.95 poin
+        dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 173 RPS, maka nilainya 173 / 200 x 30 = 25.95 poin
         
       - Mencari user peak concurrency dengan spawn rate 50 100 200 dan 500 (maks 5 poin)
 
