@@ -129,23 +129,32 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
       - mencari maksimum nilai **RATA RATA RPS** yang didapat
         nilai (maksimum 30 poin): Rata rata RPS / 200 x 25 
 
-        contoh :
+        CONTOH : <br>
+
         berikut menggunakan single server droplet Digital Ocean (4$) dengan konfigurasi locust sebagai berikut
+        
         ![alt text](result/4_usd_locust.png)
+
         resource utilization
         ![alt text](result/4_usd_cpu.png)
+
         output 
         ![alt text](result/4_usd_result.png)
         dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 73 RPS, maka nilainya 73 / 200 x 30 = 10.95 poin
 
-        contoh lain :
+        CONTOH LAIN : <br>
+
         berikut menggunakan droplet 3 Digital Ocean (3x18$) dengan weighted load balancing
         ![alt text](result/LB_locust.png)
-        resource utilization
+
+        resource utilization dengan 3 server
         ![alt text](result/LB_cpu.png)
+
         output 
         ![alt text](result/LB_result.png)
+
         dari hasil tersebut didapatkan Rata rata RPS dengan failure 0% adalah 73 RPS, maka nilainya 173 / 200 x 30 = 25.95 poin
+        
       - Mencari user peak concurrency dengan spawn rate 50 100 200 dan 500 (maks 5 poin)
 
   - Terdapat Kesimpulan dan saran (10 poin)
